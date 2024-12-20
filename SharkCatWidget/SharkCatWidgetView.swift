@@ -23,9 +23,14 @@ struct SharkCatWidgetView: View {
                 // Token Image
                 HStack(spacing: 0) {
                     ZStack{
-                        Image("sharkcat")
-                            .resizable()
-                            .frame(width: 50, height: 50)
+                        
+                        //Fix here reading to memory as Uiimage instead of rendering the image instantly
+                        if let uiImage = UIImage(named: "cat", in: Bundle.main, compatibleWith: nil) {
+                           Image(uiImage: uiImage)
+                               .resizable()
+                               .frame(width: 50, height: 50)
+                         }
+                        
                     }
                     
                     VStack{

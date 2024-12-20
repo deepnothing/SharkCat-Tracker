@@ -45,6 +45,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0478B9BC2D160CBB008946DA /* Exceptions for "SharkCatWidget" folder in "SharkCatTracker" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				cat.png,
+			);
+			target = AB5CDB162D1130930075F2F5 /* SharkCatTracker */;
+		};
 		AB5CDB602D1131100075F2F5 /* Exceptions for "SharkCatWidget" folder in "SharkCatWidgetExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -75,6 +82,7 @@
 		AB5CDB4F2D11310F0075F2F5 /* SharkCatWidget */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				0478B9BC2D160CBB008946DA /* Exceptions for "SharkCatWidget" folder in "SharkCatTracker" target */,
 				AB5CDB602D1131100075F2F5 /* Exceptions for "SharkCatWidget" folder in "SharkCatWidgetExtension" target */,
 			);
 			path = SharkCatWidget;
