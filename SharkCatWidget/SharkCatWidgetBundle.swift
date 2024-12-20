@@ -12,7 +12,5 @@ import SwiftUI
 struct SharkCatWidgetBundle: WidgetBundle {
     var body: some Widget {
         SharkCatWidget()
-        SharkCatWidgetControl()
-        SharkCatWidgetLiveActivity()
     }
 }

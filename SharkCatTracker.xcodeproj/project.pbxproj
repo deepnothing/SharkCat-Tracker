@@ -6,43 +6,78 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AB5CDB4C2D11310F0075F2F5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5CDB4B2D11310F0075F2F5 /* WidgetKit.framework */; };
+		AB5CDB4E2D11310F0075F2F5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5CDB4D2D11310F0075F2F5 /* SwiftUI.framework */; };
+		AB5CDB5F2D1131100075F2F5 /* SC Tracker Widget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AB5CDB492D11310F0075F2F5 /* SC Tracker Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
-		AB5CDB292D1130940075F2F5 /* PBXContainerItemProxy */ = {
+		AB5CDB5D2D1131100075F2F5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AB5CDB0F2D1130930075F2F5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AB5CDB162D1130930075F2F5;
-			remoteInfo = SharkCatTracker;
-		};
-		AB5CDB332D1130940075F2F5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AB5CDB0F2D1130930075F2F5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AB5CDB162D1130930075F2F5;
-			remoteInfo = SharkCatTracker;
+			remoteGlobalIDString = AB5CDB482D11310F0075F2F5;
+			remoteInfo = SharkCatWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AB5CDB642D1131100075F2F5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AB5CDB5F2D1131100075F2F5 /* SC Tracker Widget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		AB5CDB172D1130930075F2F5 /* SharkCatTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharkCatTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB5CDB282D1130940075F2F5 /* SharkCatTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharkCatTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB5CDB322D1130940075F2F5 /* SharkCatTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharkCatTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB5CDB172D1130930075F2F5 /* SC Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SC Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB5CDB492D11310F0075F2F5 /* SC Tracker Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SC Tracker Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB5CDB4B2D11310F0075F2F5 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		AB5CDB4D2D11310F0075F2F5 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		ABAAA9182D13CD3000E49C3B /* SharkCatWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SharkCatWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AB5CDB602D1131100075F2F5 /* Exceptions for "SharkCatWidget" folder in "SharkCatWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				Info.plist,
+			);
+			target = AB5CDB482D11310F0075F2F5 /* SharkCatWidgetExtension */;
+		};
+		ABAAA9152D1330AB00E49C3B /* Exceptions for "SharkCatTracker" folder in "SharkCatWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				APIManager.swift,
+				Assets.xcassets,
+			);
+			target = AB5CDB482D11310F0075F2F5 /* SharkCatWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		AB5CDB192D1130930075F2F5 /* SharkCatTracker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				ABAAA9152D1330AB00E49C3B /* Exceptions for "SharkCatTracker" folder in "SharkCatWidgetExtension" target */,
+			);
 			path = SharkCatTracker;
 			sourceTree = "<group>";
 		};
-		AB5CDB2B2D1130940075F2F5 /* SharkCatTrackerTests */ = {
+		AB5CDB4F2D11310F0075F2F5 /* SharkCatWidget */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SharkCatTrackerTests;
-			sourceTree = "<group>";
-		};
-		AB5CDB352D1130940075F2F5 /* SharkCatTrackerUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SharkCatTrackerUITests;
+			exceptions = (
+				AB5CDB602D1131100075F2F5 /* Exceptions for "SharkCatWidget" folder in "SharkCatWidgetExtension" target */,
+			);
+			path = SharkCatWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -55,17 +90,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB5CDB252D1130940075F2F5 /* Frameworks */ = {
+		AB5CDB462D11310F0075F2F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB5CDB2F2D1130940075F2F5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				AB5CDB4E2D11310F0075F2F5 /* SwiftUI.framework in Frameworks */,
+				AB5CDB4C2D11310F0075F2F5 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +105,10 @@
 		AB5CDB0E2D1130930075F2F5 = {
 			isa = PBXGroup;
 			children = (
+				ABAAA9182D13CD3000E49C3B /* SharkCatWidgetExtension.entitlements */,
 				AB5CDB192D1130930075F2F5 /* SharkCatTracker */,
-				AB5CDB2B2D1130940075F2F5 /* SharkCatTrackerTests */,
-				AB5CDB352D1130940075F2F5 /* SharkCatTrackerUITests */,
+				AB5CDB4F2D11310F0075F2F5 /* SharkCatWidget */,
+				AB5CDB4A2D11310F0075F2F5 /* Frameworks */,
 				AB5CDB182D1130930075F2F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,11 +116,19 @@
 		AB5CDB182D1130930075F2F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB5CDB172D1130930075F2F5 /* SharkCatTracker.app */,
-				AB5CDB282D1130940075F2F5 /* SharkCatTrackerTests.xctest */,
-				AB5CDB322D1130940075F2F5 /* SharkCatTrackerUITests.xctest */,
+				AB5CDB172D1130930075F2F5 /* SC Tracker.app */,
+				AB5CDB492D11310F0075F2F5 /* SC Tracker Widget.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AB5CDB4A2D11310F0075F2F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB5CDB4B2D11310F0075F2F5 /* WidgetKit.framework */,
+				AB5CDB4D2D11310F0075F2F5 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +141,12 @@
 				AB5CDB132D1130930075F2F5 /* Sources */,
 				AB5CDB142D1130930075F2F5 /* Frameworks */,
 				AB5CDB152D1130930075F2F5 /* Resources */,
+				AB5CDB642D1131100075F2F5 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AB5CDB5E2D1131100075F2F5 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				AB5CDB192D1130930075F2F5 /* SharkCatTracker */,
@@ -114,54 +155,30 @@
 			packageProductDependencies = (
 			);
 			productName = SharkCatTracker;
-			productReference = AB5CDB172D1130930075F2F5 /* SharkCatTracker.app */;
+			productReference = AB5CDB172D1130930075F2F5 /* SC Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AB5CDB272D1130940075F2F5 /* SharkCatTrackerTests */ = {
+		AB5CDB482D11310F0075F2F5 /* SharkCatWidgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB5CDB3F2D1130940075F2F5 /* Build configuration list for PBXNativeTarget "SharkCatTrackerTests" */;
+			buildConfigurationList = AB5CDB612D1131100075F2F5 /* Build configuration list for PBXNativeTarget "SharkCatWidgetExtension" */;
 			buildPhases = (
-				AB5CDB242D1130940075F2F5 /* Sources */,
-				AB5CDB252D1130940075F2F5 /* Frameworks */,
-				AB5CDB262D1130940075F2F5 /* Resources */,
+				AB5CDB452D11310F0075F2F5 /* Sources */,
+				AB5CDB462D11310F0075F2F5 /* Frameworks */,
+				AB5CDB472D11310F0075F2F5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AB5CDB2A2D1130940075F2F5 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				AB5CDB2B2D1130940075F2F5 /* SharkCatTrackerTests */,
+				AB5CDB4F2D11310F0075F2F5 /* SharkCatWidget */,
 			);
-			name = SharkCatTrackerTests;
+			name = SharkCatWidgetExtension;
 			packageProductDependencies = (
 			);
-			productName = SharkCatTrackerTests;
-			productReference = AB5CDB282D1130940075F2F5 /* SharkCatTrackerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		AB5CDB312D1130940075F2F5 /* SharkCatTrackerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AB5CDB422D1130940075F2F5 /* Build configuration list for PBXNativeTarget "SharkCatTrackerUITests" */;
-			buildPhases = (
-				AB5CDB2E2D1130940075F2F5 /* Sources */,
-				AB5CDB2F2D1130940075F2F5 /* Frameworks */,
-				AB5CDB302D1130940075F2F5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AB5CDB342D1130940075F2F5 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				AB5CDB352D1130940075F2F5 /* SharkCatTrackerUITests */,
-			);
-			name = SharkCatTrackerUITests;
-			packageProductDependencies = (
-			);
-			productName = SharkCatTrackerUITests;
-			productReference = AB5CDB322D1130940075F2F5 /* SharkCatTrackerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			productName = SharkCatWidgetExtension;
+			productReference = AB5CDB492D11310F0075F2F5 /* SC Tracker Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -176,13 +193,8 @@
 					AB5CDB162D1130930075F2F5 = {
 						CreatedOnToolsVersion = 16.0;
 					};
-					AB5CDB272D1130940075F2F5 = {
+					AB5CDB482D11310F0075F2F5 = {
 						CreatedOnToolsVersion = 16.0;
-						TestTargetID = AB5CDB162D1130930075F2F5;
-					};
-					AB5CDB312D1130940075F2F5 = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = AB5CDB162D1130930075F2F5;
 					};
 				};
 			};
@@ -195,14 +207,15 @@
 			);
 			mainGroup = AB5CDB0E2D1130930075F2F5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AB5CDB182D1130930075F2F5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				AB5CDB162D1130930075F2F5 /* SharkCatTracker */,
-				AB5CDB272D1130940075F2F5 /* SharkCatTrackerTests */,
-				AB5CDB312D1130940075F2F5 /* SharkCatTrackerUITests */,
+				AB5CDB482D11310F0075F2F5 /* SharkCatWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -215,14 +228,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB5CDB262D1130940075F2F5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB5CDB302D1130940075F2F5 /* Resources */ = {
+		AB5CDB472D11310F0075F2F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,14 +245,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB5CDB242D1130940075F2F5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB5CDB2E2D1130940075F2F5 /* Sources */ = {
+		AB5CDB452D11310F0075F2F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,15 +255,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AB5CDB2A2D1130940075F2F5 /* PBXTargetDependency */ = {
+		AB5CDB5E2D1131100075F2F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AB5CDB162D1130930075F2F5 /* SharkCatTracker */;
-			targetProxy = AB5CDB292D1130940075F2F5 /* PBXContainerItemProxy */;
-		};
-		AB5CDB342D1130940075F2F5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AB5CDB162D1130930075F2F5 /* SharkCatTracker */;
-			targetProxy = AB5CDB332D1130940075F2F5 /* PBXContainerItemProxy */;
+			target = AB5CDB482D11310F0075F2F5 /* SharkCatWidgetExtension */;
+			targetProxy = AB5CDB5D2D1131100075F2F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -391,11 +385,11 @@
 				CODE_SIGN_ENTITLEMENTS = SharkCatTracker/SharkCatTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SharkCatTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = A8Q9U5W4XJ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "SC Tracker ";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -409,16 +403,15 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.deepnothing.sharkcat.SharkCatTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharkcat.SharkCatTracker;
+				PRODUCT_NAME = "SC Tracker";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -430,11 +423,11 @@
 				CODE_SIGN_ENTITLEMENTS = SharkCatTracker/SharkCatTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SharkCatTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = A8Q9U5W4XJ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "SC Tracker ";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -448,106 +441,84 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.deepnothing.sharkcat.SharkCatTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharkcat.SharkCatTracker;
+				PRODUCT_NAME = "SC Tracker";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		AB5CDB402D1130940075F2F5 /* Debug */ = {
+		AB5CDB622D1131100075F2F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SharkCatWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A8Q9U5W4XJ;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SharkCatWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SharkCatWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.deepnothing.sharkcat.SharkCatTrackerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharkcat.SharkCatTracker.SharkCatWidget;
+				PRODUCT_NAME = "SC Tracker Widget";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SharkCatTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SharkCatTracker";
-				XROS_DEPLOYMENT_TARGET = 2.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		AB5CDB412D1130940075F2F5 /* Release */ = {
+		AB5CDB632D1131100075F2F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SharkCatWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A8Q9U5W4XJ;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SharkCatWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SharkCatWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.deepnothing.sharkcat.SharkCatTrackerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharkcat.SharkCatTracker.SharkCatWidget;
+				PRODUCT_NAME = "SC Tracker Widget";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SharkCatTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SharkCatTracker";
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		AB5CDB432D1130940075F2F5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A8Q9U5W4XJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.deepnothing.sharkcat.SharkCatTrackerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = SharkCatTracker;
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		AB5CDB442D1130940075F2F5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A8Q9U5W4XJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.deepnothing.sharkcat.SharkCatTrackerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = SharkCatTracker;
-				XROS_DEPLOYMENT_TARGET = 2.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -572,20 +543,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB5CDB3F2D1130940075F2F5 /* Build configuration list for PBXNativeTarget "SharkCatTrackerTests" */ = {
+		AB5CDB612D1131100075F2F5 /* Build configuration list for PBXNativeTarget "SharkCatWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB5CDB402D1130940075F2F5 /* Debug */,
-				AB5CDB412D1130940075F2F5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AB5CDB422D1130940075F2F5 /* Build configuration list for PBXNativeTarget "SharkCatTrackerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AB5CDB432D1130940075F2F5 /* Debug */,
-				AB5CDB442D1130940075F2F5 /* Release */,
+				AB5CDB622D1131100075F2F5 /* Debug */,
+				AB5CDB632D1131100075F2F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
