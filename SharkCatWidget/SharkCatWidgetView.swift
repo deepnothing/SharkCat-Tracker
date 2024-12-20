@@ -26,7 +26,10 @@ struct SharkCatWidgetView: View {
                         if let uiImage = UIImage(named: "cat", in: Bundle.main, compatibleWith: nil) {
                            Image(uiImage: uiImage)
                                .resizable()
-                               .frame(width: 50, height: 50)
+                               .frame(
+                                       width: UIDevice.current.userInterfaceIdiom == .pad ? 35 : 50,
+                                       height: UIDevice.current.userInterfaceIdiom == .pad ? 35 : 50
+                                   )
                          }
                     Spacer()
                     VStack{
